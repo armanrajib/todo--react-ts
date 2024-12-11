@@ -1,11 +1,11 @@
-import { FC } from "react";
-
 interface TodoProps {
-  todo: string;
+  id: string;
+  text: string;
+  onRemoveTodo: (id: string) => void;
 }
 
-const TodoItem: FC<TodoProps> = ({ todo }) => {
-  return <li>{todo}</li>;
+const TodoItem: React.FC<TodoProps> = ({ id, text, onRemoveTodo }) => {
+  return <li onClick={() => onRemoveTodo(id)}>{text}</li>;
 };
 
 export default TodoItem;

@@ -23,8 +23,8 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      "no-unused-vars": ["warn"],
-      "react/prop-types": "off",
+      // "no-unused-vars": ["warn"],
+      // "react/prop-types": "off",
     },
   }
 );
