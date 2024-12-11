@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -60,7 +64,7 @@ input {
   padding: 0.75em 1em;
   border: 1px solid #666;
   border-radius: 0.25em;
-  width: 94.6%;
+  width: 100%;
   font-size: inherit;
   font-family: inherit;
 }
